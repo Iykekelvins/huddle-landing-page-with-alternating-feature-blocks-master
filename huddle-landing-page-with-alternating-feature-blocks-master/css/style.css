@@ -1,0 +1,498 @@
+*{
+    margin:0;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+}
+
+a{
+    text-decoration: none;
+}
+
+#get-btn:hover, #get-btn-2:hover{
+    background-color:hsl(322, 95%, 40%); 
+    text-decoration: none;
+}
+
+/******Header, Logo, Illustrations Mockup****/
+#header-nav{
+    background-image: url(../images/bg-hero-desktop.svg);
+    background-color: hsl(193, 100%,80%);
+    max-width: 100%;
+    padding:30px;
+}
+
+.img{
+    padding-top:70px;
+    vertical-align: center;
+}
+
+#sec-1 h1{
+    line-height: 1.4em;
+    font-weight: 600;
+    padding-top:80px;
+}
+
+#sec-1 p{
+    color:hsl(208, 11%, 25%);
+    font-weight: 400;
+    margin-bottom:20px;
+}
+
+#get-btn{
+    border: 1px solid hsl(322, 100%, 66%);
+    border-radius: 55px;
+    color: white;
+    background-color: hsl(322, 100%, 66%);
+    font-size: .8em;
+    padding: 10px 40px;
+}
+
+#try-btn{
+    border: 1px solid white;
+    border-radius: 55px;
+    background-color: white;
+    color: black;
+    font-size: .8em;
+    padding: 5px 20px;
+    float: right;
+    position:absolute;
+    top:3%;
+    right:3%;
+}
+
+
+/****************Grow Together****************/
+#sec-2{
+    display: flex;
+    border: 2px solid #cccccc;
+    border-radius: 15px;
+    padding:40px;
+    margin:40px 40px 20px 40px;
+    box-shadow: 0 1px 3px 1px #cccccc;
+}
+
+#sec-2  h2{
+    padding-top:55px;
+}
+
+#sec-2 p{
+    color:hsl(208, 11%, 55%);
+}
+
+/***************Flowing Conversations*********/
+#sec-3{
+    border: 2px solid #cccccc;
+    border-radius: 15px;
+    padding:40px;
+    margin:40px 40px 20px 40px;
+    box-shadow: 0 1px 3px 1px #cccccc;
+}
+
+#sec-3  h2{
+    padding-top:55px;
+}
+
+#sec-3 p{
+    color:hsl(208, 11%, 55%);
+  
+}
+
+/******************Your Users**************/
+#sec-4{
+    display:flex;
+    border: 2px solid #cccccc;
+    border-radius: 15px;
+    padding:40px;
+    margin:40px 40px 20px 40px;
+    box-shadow: 0 1px 3px 1px #cccccc;
+}
+
+#sec-4  h2{
+    padding-top:55px;
+}
+
+#sec-4 p{
+    color:hsl(208, 11%, 55%);
+}
+
+/*****Box surrounding the second get button*****/
+#footer-box {
+    border: 2px solid #cccccc;
+    border-radius: 15px;
+    padding:15px;
+    position: relative;
+    margin: 60px auto;
+    max-width:500px;
+    box-shadow: 0 1px 3px 1px #cccccc;
+}
+
+#footer-box h3{
+    text-align: center;
+}
+
+#get-2{          /*div surrounding the second get button*/
+    text-align: center;
+    margin:20px;
+}
+
+#get-btn-2{
+    border: 1px solid hsl(322, 100%, 66%);
+    border-radius: 55px;
+    color: white;
+    background-color: hsl(322, 100%, 66%);
+    font-size: .8em;
+    padding: 10px 30px;
+    text-align: center;
+}
+
+ #footer-container{
+    color:white;
+    background-color: hsl(192, 100%, 9%);
+    font-weight: 200;
+    padding:80px 40px 30px;  
+    font-size: 16px;
+    margin:0;
+}
+
+.footer-sec-2 a{
+    color:white;
+}
+
+.footer-sec-2 div{
+    padding:5px;
+}
+#footer-logo{
+    width:40%;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin-bottom: 0;
+}
+
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+}
+
+
+/**************** LARGEST SCREENS (LAPTOPS)***********/
+@media screen and (min-width:1096px){
+    .footer-sec-2{
+        display: flex;
+        flex-direction: column;
+        padding-top: 120px;
+       padding-left: 90px;
+    }
+    .img{
+        float: right;
+        position: absolute;
+        top:70px;
+        right:70px;
+    }
+    .icons span{
+        padding-right:15px;
+        padding-top:120px;
+    }
+    #header-nav{
+        padding-bottom:200px;
+    }
+    #sec-1 h1{
+        padding-top:125px;
+        width:65%;
+    }
+    #sec-1 p{
+        width:45%;
+         padding-top:10px;
+    }
+    #sec-2 h2, #sec-4 h2{
+        padding-left: 30px;
+    }
+    #sec-2 p, #sec-4 p{
+        width:65%;
+        padding-left: 30px;
+    }
+    #sec-3{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #footer-content{
+        display:grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    #footer-sec-1{
+        display: flex;
+        flex-direction: column;
+    }
+    #footer-sec-1 div{
+        padding:30px;
+    }
+    #footer-sec-1 span{
+        padding-right: 15px;
+    }
+    #copyright{
+        float: right;
+    }
+}
+
+
+/****************LARGE SCREENS e.g iPad Pro, Tablets***********/
+@media screen and (max-width:1095px) and (min-width:999px){
+    .img{                                                 /******illustration-mockups.svg*****/
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footer-sec-2{
+        display: flex;
+        flex-direction: column;
+        padding-top: 120px;
+       padding-left: 90px;
+    }
+    .icons span{
+        padding-right:15px;
+        padding-top:120px;
+    }
+    #sec-1 h1{
+        text-align: center;
+    }
+    #sec-1 p{
+        max-width: 80%;
+        margin: 30px auto;
+        text-align: center;
+    }
+    #sec-2 h2, #sec-4 h2{
+        padding-left: 30px;
+    }
+    #sec-2 p, #sec-4 p{
+        width:85%;
+        padding-left: 30px;
+    }
+    #sec-3 h2{
+        padding-left:7px;
+    }
+    #sec-3 p{
+        width:85%;
+    }
+    #get{   /*div surrounding the first get button*/
+     text-align: center;
+    }
+    #logo-img{
+        width: 20%;
+        position: absolute;
+        top:2%;
+    }
+    #sec-3{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #footer-content{
+        display:grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    #footer-sec-1{
+        display: flex;
+        flex-direction: column;
+    }
+    #footer-sec-1 div{
+        padding:30px;
+    }
+    #footer-sec-1 span{
+        padding-right: 15px;
+    }
+    #copyright{
+        float: right;
+    }
+}
+
+/**************** MEDIUM SCREENS e.g iPad***********/
+@media screen and (max-width:1000px) {
+    .img{                                                 /******illustration-mockups.svg*****/
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .img-div{
+        display: block;
+        margin: auto;
+    }
+    .footer-sec-2{
+        padding-top: 30px;
+    }
+    .icons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .icons span{
+        padding:20px 15px 20px ;
+        text-align: center;
+    }
+    #sec-1 h1{
+        text-align: center;
+    }
+    #sec-1 p{
+        max-width: 80%;
+        margin: 30px auto;
+        text-align: center;
+    }
+    #sec-2, #sec-4{
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    #sec-2 h2, #sec-3 h2,  #sec-4 h2{
+        text-align: center;
+    }
+    #sec-2 p, #sec-3 p, #sec-4 p{
+        width:70%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    #sec-3{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+    #get{
+     text-align: center;
+    }
+    #logo-img{
+        width: 20%;
+        position: absolute;
+        top:2%;
+    }
+    #footer-box {
+        border: 2px solid #cccccc;
+        border-radius: 15px;
+        padding:15px;
+        position: relative;
+        margin: 60px auto;
+        max-width:700px;
+        height:200px;
+    }
+    #footer-box h3{
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    #footer-sec-1 span{
+        padding-right: 15px;
+    }
+    #footer-sec-1 div{
+        padding-top: 30px;
+    }
+    #copyright{
+        text-align: center;
+    }
+    
+}
+
+/**************** PHONE SCREENS***********/
+@media screen and (max-width:700px) and (min-width:450px){
+    .img{                                                 /******illustration-mockups.svg*****/
+        width: 400px;
+    }
+    #ogo-img{
+        width: 30%;
+        position: absolute;
+        top:3%;
+    }
+    #footer-box h3{
+        text-align: center;
+        font-size: 1em;
+        margin-top:30px;
+        margin-bottom:20px;
+    }
+    #footer-box {
+        border: 2px solid #cccccc;
+        border-radius: 15px;
+        padding:15px;
+        position: relative;
+        margin: 60px 40px;
+        max-width:550px;
+        height:150px;
+    }
+    #copyright{
+        text-align: center;
+    }
+    #try-btn{
+        top:2%;
+    }
+}
+
+/**************** PHONE SCREENS e.g iPhone X***********/
+@media screen and (max-width:449px) and (min-width:325px){
+    .img{                                                  /******illustration-mockups.svg*****/
+        width:320px;
+        height:300px;
+    }
+    .section-img{
+        width: 200px;
+        height:200px;
+    }
+    #sec-1 h1{
+        font-size: 1.2em;
+    }
+    #sec-1 p{
+        font-size: 0.9em;
+    }
+    #sec-2 h2, #sec-3 h2, #sec-4 h2{
+        font-size: 1.1em;
+    }
+    #sec-2 p, #sec-3 p, #sec-4 p{
+        font-size: 0.8em;
+        width:100%;
+    }
+    #logo-img{
+        width: 35%;
+        position: absolute;
+        top:4%;
+    }
+    #footer-box h3{
+        text-align: center;
+        font-size: 14px;
+        margin-top:30px;
+        margin-bottom:40px;
+    }
+    #footer-box {
+        border: 2px solid #cccccc;
+        border-radius: 15px;
+        padding:15px;
+        position: relative;
+        margin: 60px 40px;
+        max-width:330px;
+        height:180px;
+    }
+    #copyright{
+        text-align: center;
+        font-size: 0.8em;
+        margin-bottom: 0;
+    }
+}
+
+
+/**************** SMALLEST SCREENS e.g iPhone 5***********/
+@media screen and (max-width:320px){
+    .img{
+        width:280px;
+        height:250px;
+    } 
+    .section-img{
+        width: 150px;
+        height:150px;
+    }
+    #logo-img{
+        width: 30%;
+        position: absolute;
+        top:4%;
+    }
+    #sec-1 p{
+        max-width:100%;
+    }
+    #sec-2 p, #sec-3 p, #sec-4 p {
+    }
+    #sec-1 h2, #sec-2 h2, #sec-3 h2{
+        font-size: 1.3em;
+    }
+}
